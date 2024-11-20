@@ -7,7 +7,7 @@ console.log(env);
 export const commonScenario = Object.freeze({
     executor: 'ramping-arrival-rate', // shared-iterations
     preAllocatedVUs: 50,
-    maxVUs: 100,
+    maxVUs: 1000,
     env: {
         ENV: 'prod'
     },

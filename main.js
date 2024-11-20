@@ -7,7 +7,7 @@ export function handleSummary(data) {
     };
 }
 
-export {verProdutosMaisVisualizadoRequest, verProdutosMaisVendidoRequest, pesquisarSugeridosRequest} from './src/requests/home-request.js';
+export {verProdutosMaisVisualizadoRequest, verProdutosMaisVendidoRequest, pesquisarSugeridosRequest, pesquisarProdutoRequest} from './src/requests/home-request.js';
 
 export const options = {
     ...scenarios,

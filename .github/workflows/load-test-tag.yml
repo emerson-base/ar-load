@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Tag for the tests to run (e.g., STAGES_SET='[{\"duration\":\"5s\",\"target\":10},{\"duration\":\"10s\",\"target\":10},{\"duration\":\"5s\",\"target\":0}]')"
+        description: |
+          Tag for the tests to run.
+          Example: STAGES_SET='[{"duration":"5s","target":500},{"duration":"10s","target":500},{"duration":"15s","target":1000},{"duration":"4s","target":0}]'
         required: true
         type: string
 
@@ -33,7 +35,6 @@ jobs:
       - name: Run Load Test
         run: |
           k6 run main.js --env ${{ github.event.inputs.tag }}
-#         example: STAGES_SET='[{"duration":"5s","target":10},{"duration":"10s","target":10},{"duration":"5s","target":0}]'
       - name: Prepare Artifacts for GitHub Pages
         run: |
           mkdir -p public

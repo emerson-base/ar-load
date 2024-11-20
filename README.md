@@ -36,3 +36,47 @@ Executar estágios de testes paralelos, basta inserir a duration e target separa
 ```
 k6 run main.js --env STAGES_SET='[{"duration":"5s","target":10},{"duration":"10s","target":10},{"duration":"5s","target":0}]'
 ```
+
+Executar com grafana
+
+```
+k6 run main.js --out influxdb=http://localhost:8086/k6
+```
+
+## Docker compose
+
+```
+docker-compose -f Docker/docker-compose.yml up
+```
+
+## Acesso ao grafana
+
+```
+http://localhost:3000/
+```
+
+Acesso: admin
+
+Password: admin
+
+## Acesso ao influx
+
+```
+docker ps
+docker exec -it a8dda64dcd7f influx
+show databases
+create database test
+```
+
+## Modelo de dashboard
+https://grafana.com/grafana/dashboards/2587-k6-load-testing-results/
+
+## Relatório Grafana
+
+![Tela 1](./screenshots/1.png)
+
+![Tela 2](./screenshots/2.png)
+
+![Tela 3](./screenshots/3.png)
+
+![Tela 4](./screenshots/4.png)

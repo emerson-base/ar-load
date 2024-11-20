@@ -23,3 +23,11 @@ export const pesquisaDeSugeridosScenario = Object.freeze({
     },
     exec: 'pesquisarSugeridosRequest',
 });
+
+export const pesquisaDeProdutoScenario = Object.freeze({
+    ...commonScenario,
+    tags: {
+        tag: 'pesquisa-de-produto'
+    },
+    exec: 'pesquisarProdutoRequest',
+});

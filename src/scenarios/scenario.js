@@ -1,4 +1,5 @@
 import {
+    pesquisaDeProdutoScenario,
     pesquisaDeSugeridosScenario,
     produtosMaisVendidoScenario,
     produtosMaisVisualizadoScenario
@@ -8,6 +9,7 @@ export default {
     scenarios: {
         produtosMaisVisualizadoScenario,
         produtosMaisVendidoScenario,
-        pesquisaDeSugeridosScenario
+        pesquisaDeSugeridosScenario,
+        pesquisaDeProdutoScenario,
     }
 }
