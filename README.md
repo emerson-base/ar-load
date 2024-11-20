@@ -1,0 +1,38 @@
+# k6
+
+[Documentação](https://grafana.com/docs/k6/latest/get-started/running-k6/)
+
+Run
+
+```
+k6 run main.js
+```
+
+Principais métricas
+
+```
+data_received
+data_sent
+http_req_duration (máximo 2 segundos)
+http_req_failed
+iterations
+vus
+```
+
+Run com quantidade de VUS e duração, será executado 10 usuários simultâneos durante 30 segundos
+
+```
+k6 run --vus 10 --duration 30s main.js
+```
+
+Run com quantidade de VUS e iterações, será executado 10 usuários simultâneos durante 100 iterações
+
+```
+k6 run --vus 10 --iterations 100 main.js
+```
+
+Executar estágios de testes paralelos, basta inserir a duration e target separados por objetos dentro da lista
+
+```
+k6 run main.js --env STAGES_SET='[{"duration":"5s","target":10},{"duration":"10s","target":10},{"duration":"5s","target":0}]'
+```

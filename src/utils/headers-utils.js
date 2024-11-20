@@ -1,0 +1,15 @@
+export const headersUtils = Object.freeze({
+    'authority': 'www.araujo.com.br',
+    'method': 'GET',
+    'path': '/',
+    'scheme': 'https',
+    'accept': 'text/html, */*; q=0.01',
+    'accept-encoding': 'gzip, deflate, br, zstd',
+    'accept-language': 'pt-BR,pt;q=0.9',
+    'cookie': 'dwac_5237b620ba0dd344e50c944ce2=O3a2qaYG0jpjdYEonFW1QP5lqX00x542D60%3D|dw-only|||BRL|false|America%2FSao%5FPaulo|true; cqcid=bcIeq4fl161Rej7qjwHaeb812e; cquid=||; sid=O3a2qaYG0jpjdYEonFW1QP5lqX00x542D60; dwanonymous_26e1a7081f3eae6e77b9b8a8fe4c8863=bcIeq4fl161Rej7qjwHaeb812e; __cq_dnt=0; dw_dnt=0; dwsid=w-Eiot-A5D2w2CoqutfaGAbyPXZNQagx3ABgDdrfOtzzzKAHpfA8hILnq1sMkUoosomir8OIvLWpIFg2Yc_sPA==; __privaci_cookie_consent_uuid=e3c0f66c-fcff-4f68-adcd-6099d2ec0b9e:7; __privaci_cookie_consent_generated=e3c0f66c-fcff-4f68-adcd-6099d2ec0b9e:7; __privaci_cookie_no_action={"status":"no-action-consent"}',
+    'newrelic': 'eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjM1Nzc2ODIiLCJhcCI6IjExMzQzNDg3NjMiLCJpZCI6ImQxZDcxYzUwMmZlNGFjNzAiLCJ0ciI6Ijg3YTc4MDMxNzYwYzI5NGRhNjg0MGYwZTgyNjg5OTVkIiwidGkiOjE3MzIxMDQ1NDk5ODh9fQ==',
+    'priority': 'u=1, i',
+    'referer': 'https://www.araujo.com.br/',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36',
+    'x-requested-with': 'XMLHttpRequest',
+})
