@@ -37,7 +37,7 @@ jobs:
       - name: Prepare Artifacts for GitHub Pages
         run: |
           mkdir -p public
-          cp results/summary.html public/
+          mv results/summary.html public/index.html
 
       - name: Deploy to GitHub Pages
         if: always()
